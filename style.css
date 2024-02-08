@@ -21,6 +21,8 @@ Theme developpé dans le cadre du cours 4w4
   --couleur-arriere-accueil: #09ff00;
   --couleur-arriere-event: #dd1;
   --couleur-arriere-footer: #ff00e6;
+  --couleur-niveau-transparent: rgba(0, 0, 0, .5);
+  --largeur-max: 900px;
 }
 
 /*/////////////////////////////////////////////////*/
