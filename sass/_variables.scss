@@ -1,8 +1,23 @@
 :root {
-  --couleur-arriere-entete: #ff0000;
+  /*   --couleur-arriere-entete: #ff0000;
   --couleur-arriere-accueil: #09ff00;
   --couleur-arriere-event: #dd1;
   --couleur-arriere-footer: #ff00e6;
   --couleur-niveau-transparent: rgba(0, 0, 0, .3);
+  --largeur-max: 900px; */
+
+
+  --couleur-arriere-entete: hsl(0, 100%, 50%);
+  --couleur-arriere-accueil: hsl(60, 100%, 50%);
+  --couleur-arriere-event: hsl(120, 100%, 50%);
+  --couleur-arriere-galerie: hsl(180, 100%, 50%);
+  --couleur-arriere-footer: hsl(240, 100%, 50%);
+  --couleur-niveau-transparent: rgba(0, 0, 0, .3);
   --largeur-max: 900px;
+
+  --couleur-entete: hsl(0, 100%, 90%);
+  --couleur-accueil: hsl(60, 100%, 15%);
+  --couleur-event: hsl(120, 100%, 15%);
+  --couleur-galerie: hsl(180, 100%, 15%);
+  --couleur-footer: hsl(240, 100%, 15%);
 }
