@@ -34,7 +34,7 @@ Theme developpé dans le cadre du cours 4w4
   --s-couleur-arriere: 100%;
   --l-couleur-arriere: 50%;
   --s-couleur: 100%;
-  --l-couleur: 15%;
+  --l-couleur: 50%;
   --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere));
   --couleur-arriere-accueil: hsl(var(--hu2), var(--s-couleur-arriere), var(--l-couleur-arriere));
   --couleur-arriere-event: hsl(var(--hu3), var(--s-couleur-arriere), var(--l-couleur-arriere));
@@ -57,23 +57,18 @@ Sélecteur textuel de base
 */
 h1 {
   font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
-  color: rgba(0, 0, 0, 0.5);
-  background-color: white;
 }
 
 h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2vw, 3.75rem);
-  color: rgba(0, 128, 0, 0.4);
 }
 
 h3 {
   font-size: clamp(0.75rem, -1.4375rem + 7vw, 2.5rem);
-  color: rgba(0, 4, 255, 0.3);
 }
 
 h4 {
   font-size: clamp(0.625rem, -1.3281rem + 6.25vw, 2.1875rem);
-  color: rgba(0, 88, 37, 0.2);
 }
 
 h5 {

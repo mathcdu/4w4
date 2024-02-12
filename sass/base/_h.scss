@@ -5,23 +5,19 @@ Sélecteur textuel de base
 // font size clamp generator clamp(min, % de la place que ca prend sur l'écran, max)
 h1 {
   font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
-  color: rgba($color: #000, $alpha: .5);
-  background-color: white;
+
 }
 
 h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2vw, 3.75rem);
-  color: rgba($color: green, $alpha: .4);
 }
 
 h3 {
   font-size: clamp(0.75rem, -1.4375rem + 7vw, 2.5rem);
-  color: rgba($color: rgb(0, 4, 255), $alpha: .3);
 }
 
 h4 {
   font-size: clamp(0.625rem, -1.3281rem + 6.25vw, 2.1875rem);
-  color: rgba($color: rgb(0, 88, 37), $alpha: .2);
 }
 
 h5 {
