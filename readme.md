@@ -1,17 +1,26 @@
-# Laboratoire 1
-## Introduction à Saas et révision HTML/CSS
+# Laboratoire 2
 
-### Concevoir une page de plusieurs sections aqui contient les éléments suivants:
+## Creation d'une palette de couleur avec la fonction css hsl()
+
+## Ajouter des effets de vague et une diagonal
+
+### Continuer à modifier la version du Laboratoire #1
+
 - Dossier Saas
-- normalize.css
 - style.css
+- Utilisation de différentes technique pour élaborer une palette de couleur
+- Utilisation de la règle 60-30-10
 
 À réaliser:
+
 - Compléter chacune des règles de styles des éléments H
 - Changer les couleurs de background et couleur des H
+- Ajouter les éléments bouton, lien a, blockquotes
 - Améliorer le design général sans être trop spécifique
-- Ajouter 2 variables
+- Ajouter plusieurs variables
 - Créer plusieurs commit
 - Une github-page
+
+### Ma github-page:
 
 https://mathcdu.github.io/4w4/

@@ -14,16 +14,15 @@ body {
 .global>header,
 .glabal>footer {
   flex: 0 1 var(--largeur-max);
-  border: 1px solid black;
-  background-color: var(--couleur-niveau-transparent);
+/*   border: 1px solid black; Pour labo 1 */
+  /* background-color: var(--couleur-niveau-transparent); Pour Labo 1 */
   padding: 5rem 1rem;
 }
-
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
+  position: relative;
 }
-
 #accueil {
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-accueil);
@@ -32,14 +31,80 @@ body {
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
+  z-index: 1;
+  background: linear-gradient(180deg, var(--couleur-arriere-accueil),var(--couleur-arriere-event));
 }
-
 #evenement {
   background-color: var(--couleur-arriere-event);
   color: var(--couleur-event);
+  position: relative;
+}
+blockquote {
+  margin: 0;
 }
 
+blockquote p {
+  padding: 15px;
+  background: var(--couleur-arriere-entete);
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+blockquote p::before {
+  content: "“";
+}
+
+blockquote p::after {
+  content: "”";
+}
+cite{
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  color: black;
+}
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
 }
+.button-1{
+  background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-entete);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button-2{
+  background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-entete);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button-3{
+  background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-entete);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-2:active, .button-3:active, .button-1:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
