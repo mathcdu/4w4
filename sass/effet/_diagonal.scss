@@ -13,3 +13,7 @@
   transform: skewY(-5deg);
   background-color: var(--couleur-arriere-galerie);
 }
+*::before,
+*::after{
+  box-sizing: border-box;
+}

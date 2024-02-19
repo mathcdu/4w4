@@ -3,20 +3,21 @@ body {
   flex-direction: column;
   font-family: prompt, sans-serif;
 }
-
 .global {
   display: flex;
   justify-content: center;
   min-height: 30vh;
 }
-
 .global>section,
 .global>header,
 .glabal>footer {
-  flex: 0 1 var(--largeur-max);
+  flex: 0 1 1100px;
 /*   border: 1px solid black; Pour labo 1 */
   /* background-color: var(--couleur-niveau-transparent); Pour Labo 1 */
   padding: 5rem 1rem;
+}
+.global > header {
+  flex: 1;
 }
 #entete {
   background-color: var(--couleur-arriere-entete);
@@ -27,7 +28,6 @@ body {
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-accueil);
 }
-
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
@@ -49,11 +49,9 @@ blockquote p {
   border-radius: 5px;
   font-size: 30px;
 }
-
 blockquote p::before {
   content: "“";
 }
-
 blockquote p::after {
   content: "”";
 }
@@ -69,7 +67,7 @@ cite{
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
 }
-.button-1{
+/* .button-1{
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-entete);
   padding: 10px 20px;
@@ -106,5 +104,5 @@ cite{
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
-}
+}  POUR LAB 2 */
 

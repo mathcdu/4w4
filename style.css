@@ -47,6 +47,9 @@ Theme developpé dans le cadre du cours 4w4
   --couleur-event: hsl(var(--hu3), var(--s-couleur), var(--l-couleur));
   --couleur-galerie: hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
   --couleur-footer: hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
+  --couleur-lien: hsl(0, 0%, 0%);
+  --couleur-lien-hover: hsl(200, 70%, 70%);
+  --couleur-lien-visited: hsl(200, 70%, 75%);
 }
 
 /*/////////////////////////////////////////////////*/
@@ -64,7 +67,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(0.75rem, -1.4375rem + 7vw, 2.5rem);
+  font-size: clamp(1.25rem, 0.2083rem + 3.33333vw, 2.5rem);
 }
 
 h4 {
@@ -96,6 +99,21 @@ p:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 
+button {
+  font-size: clamp(1.25rem, -0.4375rem + 3.33333vw, 2.5rem);
+  padding: 12px 18px;
+  background-image: linear-gradient(90deg, rgb(0, 224, 205), rgb(255, 249, 143));
+  transition: background-image 0.3s;
+}
+button:hover {
+  background-image: linear-gradient(90deg, rgb(195, 255, 143), rgb(114, 194, 244));
+  transform: scale(1.1);
+}
+button:active {
+  background-image: linear-gradient(90deg, rgb(255, 143, 143), rgb(255, 249, 143));
+  transform: scale(1);
+}
+
 /*/////////////////////////////////////////////////*/
 /* règles de la pagination                         */
 /*/////////////////////////////////////////////////*/
@@ -114,10 +132,14 @@ body {
 .global > section,
 .global > header,
 .glabal > footer {
-  flex: 0 1 var(--largeur-max);
+  flex: 0 1 1100px;
   /*   border: 1px solid black; Pour labo 1 */
   /* background-color: var(--couleur-niveau-transparent); Pour Labo 1 */
   padding: 5rem 1rem;
+}
+
+.global > header {
+  flex: 1;
 }
 
 #entete {
@@ -177,7 +199,7 @@ cite {
   color: var(--couleur-footer);
 }
 
-.button-1 {
+/* .button-1{
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-entete);
   padding: 10px 20px;
@@ -187,8 +209,7 @@ cite {
   cursor: pointer;
   transition: 0.3s;
 }
-
-.button-2 {
+.button-2{
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-entete);
   padding: 10px 20px;
@@ -198,8 +219,7 @@ cite {
   cursor: pointer;
   transition: 0.3s;
 }
-
-.button-3 {
+.button-3{
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-entete);
   padding: 10px 20px;
@@ -216,8 +236,7 @@ cite {
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
-}
-
+}  POUR LAB 2 */
 .vague {
   position: absolute;
   bottom: -1px;
@@ -251,4 +270,30 @@ cite {
   z-index: -1;
   transform: skewY(-5deg);
   background-color: var(--couleur-arriere-galerie);
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.entete__header {
+  background-image: url("images/hiclipart.com.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  margin-bottom: 50px;
+}
+
+.entete__header span {
+  display: block;
+}
+
+a {
+  color: var(--couleur-lien);
+}
+a:hover, a:focus {
+  color: var(--couleur-lien-hover);
+}
+a:visited {
+  color: var(--couleur-lien-visited);
 }

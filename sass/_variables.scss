@@ -37,4 +37,8 @@
   --couleur-event: hsl(var(--hu3), var(--s-couleur), var(--l-couleur));
   --couleur-galerie: hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
   --couleur-footer: hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
+
+  --couleur-lien: hsl(0, 0%, 0%);
+  --couleur-lien-hover: hsl(200, 70%, 70%);
+  --couleur-lien-visited: hsl(200, 70%, 75%);
 }
