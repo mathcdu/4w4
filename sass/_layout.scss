@@ -45,7 +45,7 @@ blockquote {
 
 blockquote p {
   padding: 15px;
-  background: var(--couleur-arriere-entete);
+  background: var(--couleur-arriere-galerie);
   border-radius: 5px;
   font-size: 30px;
 }
@@ -53,6 +53,18 @@ blockquote p::before {
   content: "“";
 }
 blockquote p::after {
+  content: "”";
+}
+blockquote h3 {
+  padding: 15px;
+  background: var(--couleur-arriere-event);
+  border-radius: 5px;
+  font-size: 30px;
+}
+blockquote h3::before {
+  content: "“";
+}
+blockquote h3::after {
   content: "”";
 }
 cite{
@@ -79,6 +91,15 @@ cite{
 }
 h1, h2, h3 {
   margin: 10px 0;
+}
+.evenement__section blockquote{
+  padding: 15px;
+  background: var(--couleur-arriere-accueil);
+  border-radius: 5px;
+  font-size: 30px;
+}
+.evenement__section blockquote p{
+  overscroll-behavior-block: var(--couleur-arriere-accueil);
 }
 /* .button-1{
   background-color: var(--couleur-arriere-accueil);

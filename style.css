@@ -72,7 +72,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1rem, -0.5714rem + 6.2vw, 3.75rem);
+  font-size: clamp(1.5rem, -0.5714rem + 6.2vw, 3.75rem);
 }
 
 h3 {
@@ -181,7 +181,7 @@ blockquote {
 
 blockquote p {
   padding: 15px;
-  background: var(--couleur-arriere-entete);
+  background: var(--couleur-arriere-galerie);
   border-radius: 5px;
   font-size: 30px;
 }
@@ -191,6 +191,21 @@ blockquote p::before {
 }
 
 blockquote p::after {
+  content: "”";
+}
+
+blockquote h3 {
+  padding: 15px;
+  background: var(--couleur-arriere-event);
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+blockquote h3::before {
+  content: "“";
+}
+
+blockquote h3::after {
   content: "”";
 }
 
@@ -221,6 +236,17 @@ cite {
 
 h1, h2, h3 {
   margin: 10px 0;
+}
+
+.evenement__section blockquote {
+  padding: 15px;
+  background: var(--couleur-arriere-accueil);
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.evenement__section blockquote p {
+  overscroll-behavior-block: var(--couleur-arriere-accueil);
 }
 
 /* .button-1{
@@ -325,7 +351,12 @@ h1, h2, h3 {
   }
 }
 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--couleur-lien);
+  padding: 12px;
+  font-size: 2rem;
 }
 a:hover, a:focus {
   color: var(--couleur-lien-hover);
