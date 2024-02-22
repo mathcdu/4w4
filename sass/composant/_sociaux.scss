@@ -1,0 +1,12 @@
+.sociaux{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.sociaux > path {
+  fill: var(--couleur-entete);
+  transition: fill 0.3s;
+}
+.sociaux svg{
+  fill: red;
+}

@@ -29,6 +29,9 @@ Theme developpé dans le cadre du cours 4w4
 /* règles de la pagination                         */
 /*/////////////////////////////////////////////////*/
 @import "layout";
+/*/////////////////////////////////////////////////*/
+/* Section de la page                        */
+/*/////////////////////////////////////////////////*/
 
 @import "effet/vague";
 
@@ -37,3 +40,12 @@ Theme developpé dans le cadre du cours 4w4
 @import "entete";
 
 @import "base/liens";
+
+@import "footer";
+
+/*/////////////////////////////////////////////////*/
+/* Les composants                       */
+/*/////////////////////////////////////////////////*/
+@import "composant/recherche";
+
+@import "composant/sociaux";

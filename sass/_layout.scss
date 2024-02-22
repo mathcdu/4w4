@@ -67,6 +67,19 @@ cite{
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
 }
+@media (max-width: 500px) {
+  .entete__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.entete__button {
+  margin-top: 20px;
+}
+h1, h2, h3 {
+  margin: 10px 0;
+}
 /* .button-1{
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-entete);
@@ -97,7 +110,6 @@ cite{
   cursor: pointer;
   transition: 0.3s;
 }
-
 .button-2:active, .button-3:active, .button-1:active {
   background-color: #F0F0F1;
   border-color: rgba(0, 0, 0, 0.15);

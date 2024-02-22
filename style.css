@@ -32,21 +32,30 @@ Theme developpé dans le cadre du cours 4w4
   --hu4: calc(var(--hu3) + var(--increment-angle));
   --hu5: calc(var(--hu4) + var(--increment-angle));
   --s-couleur-arriere: 100%;
-  --l-couleur-arriere: 75%;
+  --l-couleur-arriere: 50%;
   --s-couleur: 100%;
   --l-couleur: 15%;
-  --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere));
-  --couleur-arriere-accueil: hsl(var(--hu2), var(--s-couleur-arriere), var(--l-couleur-arriere));
-  --couleur-arriere-event: hsl(var(--hu3), var(--s-couleur-arriere), var(--l-couleur-arriere));
-  --couleur-arriere-galerie: hsl(var(--hu4), var(--s-couleur-arriere), var(--l-couleur-arriere));
-  --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), var(--l-couleur-arriere));
+  /* 
+    --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere));
+    --couleur-arriere-accueil: hsl(var(--hu2), var(--s-couleur-arriere), var(--l-couleur-arriere));
+    --couleur-arriere-event: hsl(var(--hu3), var(--s-couleur-arriere), var(--l-couleur-arriere));
+    --couleur-arriere-galerie: hsl(var(--hu4), var(--s-couleur-arriere), var(--l-couleur-arriere));
+    --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), var(--l-couleur-arriere));
+    --couleur-niveau-transparent: rgba(0, 0, 0, .3); 
+    --largeur-max: 900px;
+
+    --couleur-entete: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
+    --couleur-accueil: hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
+    --couleur-event: hsl(var(--hu3), var(--s-couleur), var(--l-couleur));
+    --couleur-galerie: hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
+    --couleur-footer: hsl(var(--hu5), var(--s-couleur), var(--l-couleur)); */
+  --couleur-arriere-entete: hsl(var(--hu1), 100%, var(--l-couleur-arriere));
+  --couleur-arriere-accueil: hsl(var(--hu2),80%, var(--l-couleur-arriere));
+  --couleur-arriere-event: hsl(var(--hu2), 60%, var(--l-couleur-arriere));
+  --couleur-arriere-galerie: hsl(var(--hu1), 50%, var(--l-couleur-arriere));
+  --couleur-arriere-footer: hsl(var(--hu1), 30%, var(--l-couleur-arriere));
   --couleur-niveau-transparent: rgba(0, 0, 0, .3);
   --largeur-max: 900px;
-  --couleur-entete: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
-  --couleur-accueil: hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
-  --couleur-event: hsl(var(--hu3), var(--s-couleur), var(--l-couleur));
-  --couleur-galerie: hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
-  --couleur-footer: hsl(var(--hu5), var(--s-couleur), var(--l-couleur));
   --couleur-lien: hsl(0, 0%, 0%);
   --couleur-lien-hover: hsl(200, 70%, 70%);
   --couleur-lien-visited: hsl(200, 70%, 75%);
@@ -99,17 +108,17 @@ p:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 
-button {
+button.entete__button {
   font-size: clamp(1.25rem, -0.4375rem + 3.33333vw, 2.5rem);
   padding: 12px 18px;
   background-image: linear-gradient(90deg, rgb(0, 224, 205), rgb(255, 249, 143));
   transition: background-image 0.3s;
 }
-button:hover {
+button.entete__button:hover {
   background-image: linear-gradient(90deg, rgb(195, 255, 143), rgb(114, 194, 244));
   transform: scale(1.1);
 }
-button:active {
+button.entete__button:active {
   background-image: linear-gradient(90deg, rgb(255, 143, 143), rgb(255, 249, 143));
   transform: scale(1);
 }
@@ -199,6 +208,21 @@ cite {
   color: var(--couleur-footer);
 }
 
+@media (max-width: 500px) {
+  .entete__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.entete__button {
+  margin-top: 20px;
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
 /* .button-1{
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-entete);
@@ -229,7 +253,6 @@ cite {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .button-2:active, .button-3:active, .button-1:active {
   background-color: #F0F0F1;
   border-color: rgba(0, 0, 0, 0.15);
@@ -237,6 +260,9 @@ cite {
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
 }  POUR LAB 2 */
+/*/////////////////////////////////////////////////*/
+/* Section de la page                        */
+/*/////////////////////////////////////////////////*/
 .vague {
   position: absolute;
   bottom: -1px;
@@ -255,6 +281,11 @@ cite {
   transform: rotateY(180deg);
 }
 
+@media (max-width: 480px) {
+  .vague svg {
+    height: 35px;
+  }
+}
 .diagonal {
   position: relative;
   isolation: isolate;
@@ -288,6 +319,11 @@ cite {
   display: block;
 }
 
+@media (max-width: 500px) {
+  .entete__header {
+    background-position: center;
+  }
+}
 a {
   color: var(--couleur-lien);
 }
@@ -296,4 +332,40 @@ a:hover, a:focus {
 }
 a:visited {
   color: var(--couleur-lien-visited);
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+/*/////////////////////////////////////////////////*/
+/* Les composants                       */
+/*/////////////////////////////////////////////////*/
+.recherche {
+  display: flex;
+  border: 1px solid #aaa;
+  justify-content: center;
+}
+
+.recherche__input {
+  display: block;
+}
+
+.sociaux {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sociaux > path {
+  fill: var(--couleur-entete);
+  transition: fill 0.3s;
+}
+
+.sociaux svg {
+  fill: red;
 }
