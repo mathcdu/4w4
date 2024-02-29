@@ -1,33 +1,32 @@
 # Laboratoire #3
 
-## Reproduire et améliorer la maquette présenté dans le cours
+## Continuer à modifier la version du Laboratoire #2
 
-### Continuer à modifier la version du Laboratoire #2
+- Création d'un site WP.
+- Adaptation du thème de exercice #1
+- Création du modèle index.php
 
-- Amélioration du dossier Saas
-- Amélioration dans style.css
-- Utilisation de différentes technique pour élaborer une palette de couleur
-  - monochrome (une seule teinte et on fait varier la saturation et la luminosité)
-  - complémentaire (deux teintes opposées sur le cercle chromatique 180 deg)
-  - triade (trois teintes équidistantes sur le cercle chromatique 120 deg)
-- Utilisation de la règle 60-30-10
-- Améliorer l'entête en ajoutant une image de fond qui s'enligne horizontalement
-  avec les titres de l'entête
-- Création d'un bouton utilisant les variable, la propriété background-image et
-  linear-gradient. Le bouton réagit aux événement hover et :active
-- Création de lien régissant aux événement hover et :visited :focus
-- Amélioation générale de la pagination
-- Ajout de nouveau elements html
+Création de la branche labo3
 
-À réaliser:
+- minimum 3 commits
 
-- Améliorer l'entête
-- Ajouter une image
-- Ajouter un bouton
-- Ajouter des liens
-- Améliorer la pagination
-- Ajouter des éléments html
-- Une github-page
+Un Readme.md qui contiendra:
+
+- Le nom de l'auteur
+- L'objectif du labo3
+- Les réalisations
+- Un lien vers la github-page
+
+Décomposer le titre de chaque cours:
+
+- sigle du cours ex: 582-4W4
+- le titre du cours ex: Conception d'interface et développement Web
+- la durée du cours : 90h
+- Garder les 30 premiers mots de la description du cours.
+
+La section galerie (ou autre section) affichera la liste des cours du TIM en 3 ou 4 colonnes.
+La liste devra s'adapter aux différentes largeurs de fenêtre en mobile une seule colonne.
+Chacune des cartes de cours sera formatés en en utilisant les flex box
 
 ### Ma github-page:
 

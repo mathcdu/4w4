@@ -49,10 +49,8 @@
             // sigle c'est 585-2w2 (7 premiers caractères)
             // Extraire le signe 0 jusqu'à 7 caractères
             $sigle = substr($titre, 0, 7);
-            // Find the position of the first occurrence of a substring in the string
             $titreCours = substr($titre, strlen($sigle), -6);
             $duree = substr($titre, -6, strpos($titre, '(', -6));
-
         ?>
             <div class="carte">
               <h5><?php echo $sigle; ?></h5>
