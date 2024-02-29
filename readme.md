@@ -26,7 +26,7 @@ Décomposer le titre de chaque cours:
 
 La section galerie (ou autre section) affichera la liste des cours du TIM en 3 ou 4 colonnes.
 La liste devra s'adapter aux différentes largeurs de fenêtre en mobile une seule colonne.
-Chacune des cartes de cours sera formatés en en utilisant les flex box
+Chacune des cartes de cours sera formatés en en utilisant les flex boxs.
 
 ### Ma github-page:
 
