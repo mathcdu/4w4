@@ -1,4 +1,4 @@
-# Exercice #1
+# Laboratoire #3
 
 ## Reproduire et améliorer la maquette présenté dans le cours
 
