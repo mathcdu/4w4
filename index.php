@@ -14,15 +14,22 @@
 </head>
 
 <body>
+  <div id="menu" class="global">
+    <div class="entete__menu">
+      <?php wp_nav_menu(); ?>
+    </div>
+  </div>
   <div id="entete" class="global">
     <header class="entete__header">
-      <!--       <button class="button-1" role="button">Button 1</button>
+      <div class="entete__header__texte">
+        <!--       <button class="button-1" role="button">Button 1</button>
       <button class="button-2" role="button">Button 2</button>
       <button class="button-3" role="button">Button 3</button> POUR LAB 2 -->
-      <h1 class="bgc-texte">Thème Mathi</h1>
-      <h2 class="bgc-texte">4W4 - Conception d'interface <span>et développement web</span></h2>
-      <h3 class="bgc-texte">TIM - Collège de Maisonneuves</h3>
-      <button class="entete__button">Événements</button>
+        <h1 class="bgc-texte">Thème Mathi</h1>
+        <h2 class="bgc-texte">4W4 - Conception d'interface <span>et développement web</span></h2>
+        <h3 class="bgc-texte">TIM - Collège de Maisonneuves</h3>
+        <button class="entete__button">Événements</button>
+      </div>
     </header>
     <div class="vague">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

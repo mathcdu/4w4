@@ -10,7 +10,8 @@ body {
 }
 .global>section,
 .global>header,
-.glabal>footer {
+.glabal>footer,
+.global>.entete__menu {
   flex: 0 1 1100px;
 /*   border: 1px solid black; Pour labo 1 */
   /* background-color: var(--couleur-niveau-transparent); Pour Labo 1 */
@@ -23,7 +24,7 @@ body {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
   position: relative;
-  
+
 }
 #accueil {
   background-color: var(--couleur-arriere-accueil);
