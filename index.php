@@ -19,9 +19,9 @@
       <!--       <button class="button-1" role="button">Button 1</button>
       <button class="button-2" role="button">Button 2</button>
       <button class="button-3" role="button">Button 3</button> POUR LAB 2 -->
-      <h1>Thème Mathi</h1>
-      <h2>4W4 - Conception d'interface <span>et développement web</span></h2>
-      <h3>TIM - Collège de Maisonneuves</h3>
+      <h1 class="bgc-texte">Thème Mathi</h1>
+      <h2 class="bgc-texte">4W4 - Conception d'interface <span>et développement web</span></h2>
+      <h3 class="bgc-texte">TIM - Collège de Maisonneuves</h3>
       <button class="entete__button">Événements</button>
     </header>
     <div class="vague">
@@ -45,18 +45,20 @@
         } */ -->
         <?php if (have_posts()) :
           while (have_posts()) : the_post();
-            $titre = get_the_title();
             // sigle c'est 585-2w2 (7 premiers caractères)
             // Extraire le signe 0 jusqu'à 7 caractères
+            $titre = get_the_title();
             $sigle = substr($titre, 0, 7);
             $titreCours = substr($titre, strlen($sigle), -6);
-            $duree = substr($titre, -6, strpos($titre, '(', -6));
+            $pos_parenthese = strpos($titre, '(');
+            $duree = substr($titre, $pos_parenthese + 1, -1);
+            $titre = substr($titre, 7, $pos_parenthese - 7);
         ?>
             <div class="carte">
               <h5><?php echo $sigle; ?></h5>
-              <h3><?php echo $titreCours; ?></h3>
-              <h3><?php echo $duree; ?></h3>
+              <h3><?php echo $titre; ?></h3>
               <h5><?php echo wp_trim_words(get_the_content(), 10); ?></h5>
+              <h3>Durée: <?php echo $duree; ?></h3>
             </div>
           <?php endwhile; ?>
         <?php endif; ?>
