@@ -324,6 +324,11 @@ h1, h2, h3 {
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
 }  POUR LAB 2 */
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /*/////////////////////////////////////////////////*/
 /* Section de la page                        */
 /*/////////////////////////////////////////////////*/
@@ -398,7 +403,7 @@ a {
   justify-content: center;
   color: var(--couleur-lien);
   padding: 12px;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 a:hover, a:focus {
   color: var(--couleur-lien-hover);
@@ -481,12 +486,13 @@ a:visited {
 <li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a href="http://Événement">Événement</a></li>
 </ul></nav> */
 .menu-principal-container {
-  border: 1px solid #aaa;
   position: absolute;
   top: 0;
-  left: 50px;
+  left: 0;
   z-index: 2;
-  transform: translateX(-200%);
+  transform: translateX(-190%);
+  width: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .menu-principal-container {
@@ -501,12 +507,18 @@ a:visited {
   list-style-type: none;
   justify-content: flex-start;
   align-items: flex-start;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid black;
+  margin-top: 55px;
 }
 @media screen and (min-width: 768px) {
   #menu-principal {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -517,8 +529,9 @@ a:visited {
 #burger {
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
 }
 @media screen and (min-width: 768px) {
   #burger {
