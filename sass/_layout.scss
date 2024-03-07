@@ -6,16 +6,23 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 30vh;
+/*   min-height: 30vh; */
 }
 .global>section,
-.global>header,
-.glabal>footer,
-.global>.entete__menu {
+.glabal>footer
+ {
   flex: 0 1 1100px;
 /*   border: 1px solid black; Pour labo 1 */
   /* background-color: var(--couleur-niveau-transparent); Pour Labo 1 */
   padding: 5rem 1rem;
+}
+.entete__header,.entete__button{
+  flex: 0 1 1500px;
+  padding: 3rem 0 0 0;
+  position: relative;
+}
+.global>header {
+  padding: 2rem 1rem;
 }
 .global > header {
   flex: 1;
@@ -90,6 +97,7 @@ cite{
 }
 .entete__button {
   margin-top: 20px;
+  padding: 10px;
 }
 h1, h2, h3 {
   margin: 10px 0;

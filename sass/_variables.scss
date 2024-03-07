@@ -50,3 +50,13 @@
   --couleur-lien-hover: hsl(200, 70%, 70%);
   --couleur-lien-visited: hsl(200, 70%, 75%);
 }
+#galerie{
+
+
+}
+#entete{
+  --_couleur-arriere-vague: var(--couleur-arriere-accueil);
+}
+#event{
+  --_couleur-arriere-vague: var(--couleur-arriere-galerie);
+}

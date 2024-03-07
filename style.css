@@ -61,6 +61,14 @@ Theme developpé dans le cadre du cours 4w4
   --couleur-lien-visited: hsl(200, 70%, 75%);
 }
 
+#entete {
+  --_couleur-arriere-vague: var(--couleur-arriere-accueil);
+}
+
+#event {
+  --_couleur-arriere-vague: var(--couleur-arriere-galerie);
+}
+
 /*/////////////////////////////////////////////////*/
 /* classes utiles                                   */
 /*/////////////////////////////////////////////////*/
@@ -155,17 +163,25 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 30vh;
+  /*   min-height: 30vh; */
 }
 
 .global > section,
-.global > header,
-.glabal > footer,
-.global > .entete__menu {
+.glabal > footer {
   flex: 0 1 1100px;
   /*   border: 1px solid black; Pour labo 1 */
   /* background-color: var(--couleur-niveau-transparent); Pour Labo 1 */
   padding: 5rem 1rem;
+}
+
+.entete__header, .entete__button {
+  flex: 0 1 1500px;
+  padding: 3rem 0 0 0;
+  position: relative;
+}
+
+.global > header {
+  padding: 2rem 1rem;
 }
 
 .global > header {
@@ -253,6 +269,7 @@ cite {
 }
 .entete__button {
   margin-top: 20px;
+  padding: 10px;
 }
 
 h1, h2, h3 {
@@ -333,6 +350,10 @@ h1, h2, h3 {
     height: 35px;
   }
 }
+.remplissage {
+  fill: var(--_couleur-arriere-vague);
+}
+
 .diagonal {
   position: relative;
   isolation: isolate;
@@ -450,27 +471,61 @@ a:visited {
     flex-wrap: wrap;
   }
 } */
-/*
-<div id="menu" class="global">
-  <div class="entete__menu">
-    <div class="menu-jeux-container">
-      <ul id="menu-jeux" class="menu">
-        <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8080/4w4-emily/2020/10/07/582-1j1-animation-et-interactivite-en-jeu-75h/">Animation et interactivité</a></li>
-        <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a href="http://localhost:8080/4w4-emily/2020/10/07/582-2j2creation-de-jeu-2d-60h/">Jeu 2D</a></li>
-        <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a href="http://localhost:8080/4w4-emily/2020/10/07/582-3j3-creation-de-jeu-3d-75h/">Jeu 3D</a></li>
-        <li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-36"><a href="http://localhost:8080/4w4-emily/2020/10/07/582-3m5imagerie-3d-75h/">Imagerie 3D</a></li>
-        <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-37"><a href="http://localhost:8080/4w4-emily/2020/10/07/360-4j4-creation-de-jeu-en-equipe-105h/">Création en équipe</a></li>
-      </ul>
-    </div>    
-  </div>
-</div>
-*/
-.menu-entete-container {
+/* <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost/4w4-mathieu/index.php/2020/10/07/582-6n3-stage-285h/">Stage</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a href="http://localhost/4w4-mathieu/index.php/2020/10/07/582-5mbtechnologies-emergentes-et-avancees-volet-creation-60h/">Technologies émergentes</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a href="http://localhost/4w4-mathieu/index.php/2020/10/07/582-5w5-projet-web-en-equipe-105h/">Projet Web</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-36"><a href="http://localhost/4w4-mathieu/index.php/2020/10/07/350-5n1-communication-et-dynamique-dune-equipe-de-travail-45h/">Communication et dynamique</a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-37"><a href="http://localhost/4w4-mathieu/index.php/2020/10/07/393-5e1-methodes-de-recherche-et-preparation-au-marche-du-travail-45h/">Méthodes de recherche</a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39"><a href="http://Accueil">Accueil</a></li>
+<li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a href="http://Galerie">Galerie</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a href="http://Événement">Événement</a></li>
+</ul></nav> */
+.menu-principal-container {
   border: 1px solid #aaa;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: 2;
+  transform: translateX(-200%);
+}
+@media screen and (min-width: 768px) {
+  .menu-principal-container {
+    position: static;
+    transform: translateX(0);
+  }
 }
 
-.menu {
+#menu-principal {
   display: flex;
+  flex-direction: column;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media screen and (min-width: 768px) {
+  #menu-principal {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+#chk_burger {
+  display: none;
+}
+
+#burger {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 768px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk_burger:checked ~ .menu-principal-container {
+  transform: translateX(0%);
 }
