@@ -65,8 +65,8 @@ Theme developpé dans le cadre du cours 4w4
   --_couleur-arriere-vague: var(--couleur-arriere-accueil);
 }
 
-#event {
-  --_couleur-arriere-vague: var(--couleur-arriere-galerie);
+#evenement {
+  --_couleur-arriere-vague: var(--couleur-arriere-footer);
 }
 
 /*/////////////////////////////////////////////////*/

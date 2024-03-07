@@ -1,6 +1,6 @@
-# Laboratoire #3
+# Laboratoire #4
 
-## Continuer à modifier la version du Laboratoire #2
+## Continuer à modifier la version du Laboratoire #3
 
 - Création d'un site WP.
 - Adaptation du thème de exercice #1
@@ -12,21 +12,15 @@ Création de la branche labo3
 
 Un Readme.md qui contiendra:
 
-- Le nom de l'auteur
-- L'objectif du labo3
-- Les réalisations
-- Un lien vers la github-page
-
-Décomposer le titre de chaque cours:
-
-- sigle du cours ex: 582-4W4
-- le titre du cours ex: Conception d'interface et développement Web
-- la durée du cours : 90h
-- Garder les 30 premiers mots de la description du cours.
-
-La section galerie (ou autre section) affichera la liste des cours du TIM en 3 ou 4 colonnes.
-La liste devra s'adapter aux différentes largeurs de fenêtre en mobile une seule colonne.
-Chacune des cartes de cours sera formatés en en utilisant les flex boxs.
+Création du menu principal
+Ajouter un menu permettant d'accéder
+à vos cinq cours préférés
+à chacune des sections de la page
+Le menu doit être formatter en utilisant composant/\_menu.scss Le menu doit être adaptatif et être amovible en version mobile.
+Création d'un header.php
+Créer le template header.php qui contiendra la structure d'entête de la page qui sera reproduite dans chacun des modules du thème
+Création d'un « template-part » (gabarit)
+Créer un template-part qui permettra d'afficher les vagues.
 
 ### Ma github-page:
 
