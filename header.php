@@ -15,6 +15,7 @@
 
 <body>
   <div id="menu" class="global">
+    <?php echo get_custom_logo(); ?>
     <header class="entete__menu">
       <label id="burger" for="chk_burger">
         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000">
