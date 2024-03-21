@@ -41,5 +41,6 @@
 
 </div>
 </body>
+<!-- pour TP , utiliser wp nav menu -->
 
 </html>

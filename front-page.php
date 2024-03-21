@@ -19,15 +19,11 @@
   <section class="accueil__section">
     <h2>Accueil</h2>
     <div class="section__pays">
-      <!--         /* if (have_posts()) {
-        while (have_posts()) {
-        the_post();
-        the_title('<p>', '</p>');
-        $contenue = get_the_content();
-        $contenue = wp_trim_words($contenue, 10);
-        echo $contenue;
-        }
-        } */ -->
+      <?php
+      /*     get_the_title(); retourne une chaine de caractères qui contient le titre
+    the_title; Lui il affiche le titre (echo) */
+      ?>
+
       <?php if (have_posts()) :
         while (have_posts()) : the_post();
       ?>
@@ -35,6 +31,7 @@
             <h3><?php the_title(); ?></h3>
             <h5><?php echo wp_trim_words(get_the_content(), 10); ?></h5>
             <p><a href="<?php echo get_permalink(); ?>">Voir la suite...</a></p>
+            <?php the_category(); ?>
           </div>
         <?php endwhile; ?>
       <?php endif; ?>

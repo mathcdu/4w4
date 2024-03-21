@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div id="menu" class="global">
+  <div id="menu" class="global clr-agencement-primaire">
     <?php echo get_custom_logo(); ?>
     <header class="entete__menu">
       <label id="burger" for="chk_burger">

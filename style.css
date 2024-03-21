@@ -17,12 +17,6 @@ Theme developpé dans le cadre du cours 4w4
 /* variables css                                   */
 /*/////////////////////////////////////////////////*/
 :root {
-  /*   --couleur-arriere-entete: #ff0000;
-  --couleur-arriere-accueil: #09ff00;
-  --couleur-arriere-event: #dd1;
-  --couleur-arriere-footer: #ff00e6;
-  --couleur-niveau-transparent: rgba(0, 0, 0, .3);
-  --largeur-max: 900px; */
   --nb-elements: 5;
   --increment-angle: calc(360deg / var(--nb-elements));
   --angle-initial: 180deg;
@@ -35,22 +29,8 @@ Theme developpé dans le cadre du cours 4w4
   --l-couleur-arriere: 50%;
   --s-couleur: 100%;
   --l-couleur: 15%;
-  /* 
-    --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere));
-    --couleur-arriere-accueil: hsl(var(--hu2), var(--s-couleur-arriere), var(--l-couleur-arriere));
-    --couleur-arriere-event: hsl(var(--hu3), var(--s-couleur-arriere), var(--l-couleur-arriere));
-    --couleur-arriere-galerie: hsl(var(--hu4), var(--s-couleur-arriere), var(--l-couleur-arriere));
-    --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere), var(--l-couleur-arriere));
-    --couleur-niveau-transparent: rgba(0, 0, 0, .3); 
-    --largeur-max: 900px;
-
-    --couleur-entete: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
-    --couleur-accueil: hsl(var(--hu2), var(--s-couleur), var(--l-couleur));
-    --couleur-event: hsl(var(--hu3), var(--s-couleur), var(--l-couleur));
-    --couleur-galerie: hsl(var(--hu4), var(--s-couleur), var(--l-couleur));
-    --couleur-footer: hsl(var(--hu5), var(--s-couleur), var(--l-couleur)); */
   --couleur-arriere-entete: hsl(var(--hu1), 100%, var(--l-couleur-arriere));
-  --couleur-arriere-accueil: hsl(var(--hu2),80%, var(--l-couleur-arriere));
+  --couleur-arriere-accueil: hsl(var(--hu2), 80%, var(--l-couleur-arriere));
   --couleur-arriere-event: hsl(var(--hu2), 60%, var(--l-couleur-arriere));
   --couleur-arriere-galerie: hsl(var(--hu1), 50%, var(--l-couleur-arriere));
   --couleur-arriere-footer: hsl(var(--hu1), 30%, var(--l-couleur-arriere));
@@ -67,6 +47,154 @@ Theme developpé dans le cadre du cours 4w4
 
 #evenement {
   --_couleur-arriere-vague: var(--couleur-arriere-footer);
+}
+
+.clr-primaire-100 {
+  color: hsl(220, 100%, 85%);
+}
+
+.bck-primaire-100 {
+  background-color: hsl(220, 100%, 85%);
+}
+
+.clr-primaire-200 {
+  color: hsl(220, 100%, 60%);
+}
+
+.bck-primaire-200 {
+  background-color: hsl(220, 100%, 60%);
+}
+
+.clr-primaire-300 {
+  color: hsl(220, 100%, 30%);
+}
+
+.bck-primaire-300 {
+  background-color: hsl(220, 100%, 30%);
+}
+
+.clr-primaire-400 {
+  color: hsl(220, 100%, 15%);
+}
+
+.bck-primaire-400 {
+  background-color: hsl(220, 100%, 15%);
+}
+
+.clr-secondaire-100 {
+  color: hsl(40, 100%, 85%);
+}
+
+.bck-secondaire-100 {
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-secondaire-200 {
+  color: hsl(40, 100%, 50%);
+}
+
+.bck-secondaire-200 {
+  background-color: hsl(40, 100%, 50%);
+}
+
+.clr-secondaire-300 {
+  color: hsl(40, 100%, 30%);
+}
+
+.bck-secondaire-300 {
+  background-color: hsl(40, 100%, 30%);
+}
+
+.clr-secondaire-400 {
+  color: hsl(40, 100%, 15%);
+}
+
+.bck-secondaire-400 {
+  background-color: hsl(40, 100%, 15%);
+}
+
+.clr-ternaire-100 {
+  color: hsl(10, 100%, 85%);
+}
+
+.bck-ternaire-100 {
+  background-color: hsl(10, 100%, 85%);
+}
+
+.clr-ternaire-200 {
+  color: hsl(10, 100%, 50%);
+}
+
+.bck-ternaire-200 {
+  background-color: hsl(10, 100%, 50%);
+}
+
+.clr-ternaire-300 {
+  color: hsl(10, 100%, 30%);
+}
+
+.bck-ternaire-300 {
+  background-color: hsl(10, 100%, 30%);
+}
+
+.clr-ternaire-400 {
+  color: hsl(10, 100%, 15%);
+}
+
+.bck-ternaire-400 {
+  background-color: hsl(10, 100%, 15%);
+}
+
+.clr-vert-100 {
+  color: hsl(70, 100%, 85%);
+}
+
+.bck-vert-100 {
+  background-color: hsl(70, 100%, 85%);
+}
+
+.clr-vert-200 {
+  color: hsl(70, 100%, 50%);
+}
+
+.bck-vert-200 {
+  background-color: hsl(70, 100%, 50%);
+}
+
+.clr-vert-300 {
+  color: hsl(70, 100%, 30%);
+}
+
+.bck-vert-300 {
+  background-color: hsl(70, 100%, 30%);
+}
+
+.clr-vert-400 {
+  color: hsl(70, 100%, 15%);
+}
+
+.bck-vert-400 {
+  background-color: hsl(70, 100%, 15%);
+}
+
+.clr-agencement-primaire {
+  color: hsl(220, 100%, 85%);
+  background-image: linear-gradient(90deg, hsl(220, 100%, 15%), hsl(220, 100%, 60%));
+}
+
+.clr-agencement-secondaire {
+  color: hsl(40, 100%, 15%);
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-agencement-ternaire {
+  color: hsl(10, 100%, 15%);
+  background-color: hsl(10, 100%, 85%);
+}
+
+.clr-agencement-vert {
+  color: hsl(70, 100%, 15%);
+  background-color: hsl(70, 100%, 85%);
 }
 
 /*/////////////////////////////////////////////////*/
@@ -464,6 +592,14 @@ a:visited {
   background-color: hsl(var(--hu1), var(--l-couleur-arriere), 75%);
   flex-grow: 1;
   box-shadow: rgba(255, 0, 0, 0.07) 0px 1px 2px, rgba(255, 0, 0, 0.07) 0px 2px 4px, rgba(255, 0, 0, 0.07) 0px 4px 8px, rgba(255, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.carte .post-categories {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
 }
 
 /* .carte *{
