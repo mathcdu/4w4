@@ -9,7 +9,7 @@
       <button class="button-3" role="button">Button 3</button> POUR LAB 2 -->
       <h1 class="bgc-texte"><?php echo get_bloginfo("name") ?></h1>
       <h2 class="bgc-texte"><?php echo get_bloginfo("description") ?></h2>
-      <h3 class="bgc-texte">TIM - Collège de Maisonneuves</h3>
+      <h3 class="bgc-texte">À votre service depuis 1999</h3>
       <button class="entete__button">Événements</button>
     </div>
   </section>
