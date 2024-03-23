@@ -225,7 +225,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.25rem, 0.2083rem + 3.33333vw, 2.5rem);
+  font-size: clamp(1rem, 1.5vw, 2rem);
   display: flex;
   align-items: center;
 }
@@ -474,7 +474,7 @@ body {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 140px;
+  height: 120px;
   transform: rotateY(180deg);
 }
 
@@ -591,27 +591,58 @@ a:visited {
   flex: 1 0 252.5px;
   background-color: hsl(var(--hu1), var(--l-couleur-arriere), 75%);
   flex-grow: 1;
-  box-shadow: rgba(255, 0, 0, 0.07) 0px 1px 2px, rgba(255, 0, 0, 0.07) 0px 2px 4px, rgba(255, 0, 0, 0.07) 0px 4px 8px, rgba(255, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  /* Rounded edges always */
+}
+
+.carte:hover {
+  transform: translateY(-5px) rotate(-2deg);
+  /* Apply angle and lift on hover */
+}
+
+.carte h3 {
+  margin-bottom: 0.5rem;
+}
+
+.carte h5 {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.carte p {
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.carte p a {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.carte a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.carte a:hover {
+  color: #0056b3;
 }
 
 .carte .post-categories {
   list-style-type: none;
 }
 
-ul {
+.carte ul {
   padding: 0;
+  margin: 0;
 }
 
-/* .carte *{
-  text-align: center;
-} */
-/* @media (max-width: 480px) {
-  .carte {
-    flex-direction: row;
-    flex: auto;
-    flex-wrap: wrap;
-  }
-} */
 /* <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost/4w4-mathieu/index.php/2020/10/07/582-6n3-stage-285h/">Stage</a></li>
 <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a href="http://localhost/4w4-mathieu/index.php/2020/10/07/582-5mbtechnologies-emergentes-et-avancees-volet-creation-60h/">Technologies émergentes</a></li>
 <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a href="http://localhost/4w4-mathieu/index.php/2020/10/07/582-5w5-projet-web-en-equipe-105h/">Projet Web</a></li>

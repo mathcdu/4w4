@@ -12,14 +12,16 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 140px;
+  height: 120px;
   transform: rotateY(180deg);
 }
+
 @media (max-width: 480px) {
   .vague svg {
     height: 35px;
   }
 }
-.remplissage{
+
+.remplissage {
   fill: var(--_couleur-arriere-vague);
 }
