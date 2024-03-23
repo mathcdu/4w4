@@ -1,14 +1,20 @@
-.entete__header{
+.entete__header {
   background-image: url("images/hiclipart.com.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
   margin-bottom: 50px;
 }
-.entete__header span{
+
+.entete__header span {
   display: block;
 }
+
 @media (max-width: 500px) {
   .entete__header {
     background-position: center;
   }
+}
+
+#menu img {
+  padding-left: 35px;
 }
