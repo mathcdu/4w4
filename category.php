@@ -33,15 +33,33 @@
 </div>
 <div id="evenement" class="global">
   <section class="evenement__section">
-    <h2>Événement</h2>
+    <h2>Catégories</h2>
+    <div class="section__cat">
+      <!--     <h2>Événement</h2>
     <blockquote cite="https://www.brainyquote.com/authors/erin_cummings">
       <p>
         At the end of the day, you are solely responsible for your success and your failure.
       </p>
     </blockquote>
-    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, iste sint? Nam, blanditiis? Quod, a modi, quia soluta atque odio iure architecto sapiente, repellat pariatur placeat. Mollitia vitae asperiores deserunt.</h3>
+    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, iste sint? Nam, blanditiis? Quod, a modi, quia soluta atque odio iure architecto sapiente, repellat pariatur placeat. Mollitia vitae asperiores deserunt.</h3> -->
+      <?php
+      $categories = get_categories();
+      foreach ($categories as $category) {
+        $category_link = get_category_link($category->term_id);
+        $category_name = $category->name;
+        $category_description = wp_trim_words($category->description, 10);
+        $category_count = $category->count;
+      ?>
+        <div class="carte">
+          <h3><?php echo $category_name; ?></h3>
+          <p><?php echo $category_description; ?></p>
+          <p><a href="<?php echo $category_link; ?>">Voir les destinations de cette catégorie</a></p>
+          <p>Nombre d'articles : <?php echo $category_count; ?></p>
+        </div>
+      <?php } ?>
   </section>
   <?php get_template_part("gabarit/vague"); ?>
+</div>
 </div>
 
 
